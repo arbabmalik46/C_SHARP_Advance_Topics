@@ -1,14 +1,33 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace NonGenericCollections
 {
-    class Program
+
+    public static class HelperClass
     {
-        static void Main(string[] args)
+		#region Methods
+		/// <summary>
+		/// This will print whatever you pass as an argument
+		/// </summary>
+		/// <returns>
+		/// Null
+		/// </returns>
+		/// <param name="name">Pass your name as an argument</param>
+		public static void GetReceipt(string name = null)
+		{
+			Console.WriteLine(name);
+		}
+		#endregion
+	}
+	class Program
+    {
+        
+		static void Main(string[] args)
         {
             #region ArrayList
             //ArrayList arrayList = new ArrayList();
@@ -48,8 +67,27 @@ namespace NonGenericCollections
             #endregion
 
             #region HashTable
+            Hashtable hashtable = new Hashtable()
+            {
+                {"Hello","Hello" },
+                {"World","World"},
+                { 3,5}
+            };
+            Console.WriteLine(hashtable[3]);
+            hashtable.Add(2,"Ja way");
+            Console.WriteLine(hashtable["World"]);
+            Console.WriteLine(hashtable[2]);
+            //hashtable.Add("ID",3473);
+            //hashtable.Add("Name","Arbab");
+            //hashtable.Add("Salary","50000");
+            //hashtable.Add("Height",5.3);
+            //hashtable.Add(4,53);
+            //Console.WriteLine(hashtable[4]);
+            //Console.WriteLine(hashtable["Salary"]);
 
             #endregion
-        }
-    }
+
+            HelperClass.GetReceipt(Convert.ToString(Guid.Empty));
+		}
+	}
 }
