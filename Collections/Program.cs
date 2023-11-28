@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using NonGenericCollections;
 
 namespace Collections
 {
@@ -23,15 +24,32 @@ namespace Collections
     //    }
     //}
     #endregion
-        class E
+
+    #region Generic Class
+    public class ET<T>
     {
+        public ET() { }
+        public ET(T t) {
+            Console.Write(t);
+            Console.WriteLine("Your Value is the type of "+t.GetType());   
+        }
+        public ET(T t1, T t2) { Console.WriteLine(t1); Console.WriteLine(t2); Console.WriteLine("Your First Value is the type of " + t1.GetType() + "and Second Value is the type of " + t2.GetType()); }
 
     }
+    #endregion
+
+    
     class Program
     {
         static void Main(string[] args)
         {
-            
+            ET<string> eT = new ET<string>("Ja","Ja");
+
+            #region Refereing Class
+            HelperClass.GetReceipt(Ref.One.ToString());
+
+            #endregion
+
 
             #region Collection Example Commented
             //var c = new List<Quiz>();
@@ -57,6 +75,7 @@ namespace Collections
             //arr[5]= 6;
             //Console.WriteLine(arr[5]);
             #endregion
+
 
         }
     }
