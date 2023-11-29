@@ -14,6 +14,9 @@ namespace NonGenericCollections
 		
 		static void Main(string[] args)
 		{
+
+			HashTableCollection collection = new HashTableCollection();
+
 			#region ArrayList
 			//ArrayList arrayList = new ArrayList();
 			//arrayList.Add(10); //To add the element
