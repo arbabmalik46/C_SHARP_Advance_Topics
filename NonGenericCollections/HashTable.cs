@@ -11,6 +11,11 @@ namespace NonGenericCollections
 {
     public class HashTableCollection
     {
+        Hashtable b = new Hashtable() {
+            {'s',34 },
+            {'r',90}
+        };
+        
         public HashTableCollection() {
             Hashtable a = new Hashtable();
             a.Add('a',23);
@@ -28,8 +33,24 @@ namespace NonGenericCollections
                 , { 'c', 4 }
                 , { 'v',1 }
             };
-            Console.Write(a2['a']);
-
+            foreach (object item in a2.Keys)
+            {
+                Console.WriteLine(item +":"+ a2[item]);
+            }
+            a2.Remove('a'); //it will remove the value on key
+            Console.WriteLine(a2.ContainsKey('b'));
+            Console.WriteLine(a2.ContainsValue(4));
+            Console.WriteLine(a2.GetHashCode());
+            Console.WriteLine(a2.Contains('b'));
+            Console.WriteLine(a2.Count);
+            Console.WriteLine(a2.Keys);
+            Console.WriteLine(a2.Values);
+            Console.WriteLine("a".GetHashCode());
+            a2.Clear(); // clears the HashTable
+            foreach (object item in a2.Keys)
+            {
+                Console.WriteLine(item + ":" + a2[item]);
+            }
         }
     }
 }

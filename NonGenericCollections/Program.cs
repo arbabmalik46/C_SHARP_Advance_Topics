@@ -15,7 +15,7 @@ namespace NonGenericCollections
 		static void Main(string[] args)
 		{
 
-			HashTableCollection collection = new HashTableCollection();
+
 
 			#region ArrayList
 			//ArrayList arrayList = new ArrayList();
@@ -54,18 +54,18 @@ namespace NonGenericCollections
 
 			#endregion
 
-
 			#region HashTable
-			Hashtable hashtable = new Hashtable()
-			{
-				{"Hello","Hello" },
-				{"World","World"},
-				{ 3,5}
-			};
-			Console.WriteLine(hashtable[3]);
-			hashtable.Add(2,"Ja way");
-			Console.WriteLine(hashtable["World"]);
-			Console.WriteLine(hashtable[2]);
+			//         HashTableCollection collection = new HashTableCollection();
+			//         Hashtable hashtable = new Hashtable()
+			//{
+			//	{"Hello","Hello" },
+			//	{"World","World"},
+			//	{ 3,5}
+			//};
+			//Console.WriteLine(hashtable[3]);
+			//hashtable.Add(2,"Ja way");
+			//Console.WriteLine(hashtable["World"]);
+			//Console.WriteLine(hashtable[2]);
 			//hashtable.Add("ID",3473);
 			//hashtable.Add("Name","Arbab");
 			//hashtable.Add("Salary","50000");
@@ -76,7 +76,13 @@ namespace NonGenericCollections
 
 			#endregion
 
-			HelperClass.GetReceipt(Convert.ToString(Guid.Empty));
+			#region Stack
+			//StackCollection a = new StackCollection();
+			#endregion
+
+			#region Queue
+			QueueCollection queueCollection = new QueueCollection();
+			#endregion
 		}
 	}
 }

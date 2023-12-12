@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95FC7F33-4DE5-4398-A3EF-94536239D53A}</ProjectGuid>
+    <ProjectGuid>{39B12044-7A60-480A-9610-C2B49B8762B2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NonGenericCollections</RootNamespace>
-    <AssemblyName>NonGenericCollections</AssemblyName>
+    <RootNamespace>Collections</RootNamespace>
+    <AssemblyName>Collections</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HashTable.cs" />
-    <Compile Include="HelperClass.cs" />
+    <Compile Include="DictionaryCollection.cs" />
+    <Compile Include="ListGeneric.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QueueCollection.cs" />
-    <Compile Include="ReceiptEnum.cs" />
-    <Compile Include="StackCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NonGenericCollections\NonGenericCollections.csproj">
+      <Project>{95fc7f33-4de5-4398-a3ef-94536239d53a}</Project>
+      <Name>NonGenericCollections</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
