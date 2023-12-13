@@ -71,44 +71,63 @@ namespace HandlingExceptions
 			#endregion
 
 			#region HandlingMultipleExceptionsWithFinallyBlock
-			try
-			{
-				Console.WriteLine("Enter First Number:");
-				int a = int.Parse(Console.ReadLine());
+			//try
+			//{
+			//	Console.WriteLine("Enter First Number:");
+			//	int a = int.Parse(Console.ReadLine());
 
-				Console.WriteLine("Enter Second Number:");
-				int b = int.Parse(Console.ReadLine());
-				Console.WriteLine("The division is:" + a / b);
-			}
-			catch (NullReferenceException ex)
-			{
-				Console.WriteLine(ex.Message+ ex.TargetSite);
-			}
-			catch (ApplicationException ex)
-			{
-				Console.WriteLine(ex);
-			}
-			catch(IndexOutOfRangeException ex) 
-			{
-				Console.WriteLine(ex);
-			}
-			catch(DivideByZeroException ex) 
-			{
-				Console.WriteLine(ex);
-			}
-			catch (Exception ex)
-			{
-				Console.WriteLine(ex.Message);
-			}
-			finally
-			{
-				Console.WriteLine("Finally Block Executed");
-			}
+			//	Console.WriteLine("Enter Second Number:");
+			//	int b = int.Parse(Console.ReadLine());
+			//	Console.WriteLine("The division is:" + a / b);
+			//}
+			//catch (NullReferenceException ex)
+			//{
+			//	Console.WriteLine(ex.Message+ ex.TargetSite);
+			//}
+			//catch (ApplicationException ex)
+			//{
+			//	Console.WriteLine(ex);
+			//}
+			//catch(IndexOutOfRangeException ex) 
+			//{
+			//	Console.WriteLine(ex);
+			//}
+			//catch(DivideByZeroException ex) 
+			//{
+			//	Console.WriteLine(ex);
+			//}
+			//catch (Exception ex)
+			//{
+			//	Console.WriteLine(ex.Message);
+			//}
+			//finally
+			//{
+			//	Console.WriteLine("Finally Block Executed");
+			//}
 			#endregion
 
+			#region TryAndFinally
+			//try
+			//{
+			//	int[] ints = new int[3];
+			//	ints[1] = 11;
+			//	ints[2] = 12;
+			//	ints[3] = 14;
+			//	ints[4] = 15;
+			//}
+			//finally
+			//{
+			//	Console.WriteLine("Finally Code Executed");
+			//}
+			#endregion
 
-
-
+			#region MoreExceptions
+			//OurCustomException.DefaultThrowDefaultCatch();
+			//OurCustomException.OurThrowDefaultCatch();
+			//OurCustomException.DefaultThrowOurCatch();
+			//OurCustomException.OurThrowOurCatch();
+			//OurCustomException.OurSimpleCustomException();
+			#endregion
 		}
 	}
 }
