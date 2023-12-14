@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollections", "Colle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonGenericCollections", "NonGenericCollections\NonGenericCollections.csproj", "{95FC7F33-4DE5-4398-A3EF-94536239D53A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandlingExceptions", "HandlingExceptions\HandlingExceptions.csproj", "{06CF7A2C-0FFE-48B2-B296-703EEDE4A9BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlingExceptions", "HandlingExceptions\HandlingExceptions.csproj", "{06CF7A2C-0FFE-48B2-B296-703EEDE4A9BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportantTopics", "ImportantTopics\ImportantTopics.csproj", "{81521F6F-E89A-43F6-9852-C6EACAFA2678}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImportantTopics", "ImportantTopics\ImportantTopics.csproj", "{81521F6F-E89A-43F6-9852-C6EACAFA2678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling", "FileHandling\FileHandling.csproj", "{B713A5B0-0F9E-4CAD-83D3-DFC9F9175EBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{81521F6F-E89A-43F6-9852-C6EACAFA2678}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81521F6F-E89A-43F6-9852-C6EACAFA2678}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81521F6F-E89A-43F6-9852-C6EACAFA2678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B713A5B0-0F9E-4CAD-83D3-DFC9F9175EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B713A5B0-0F9E-4CAD-83D3-DFC9F9175EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B713A5B0-0F9E-4CAD-83D3-DFC9F9175EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B713A5B0-0F9E-4CAD-83D3-DFC9F9175EBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
