@@ -28,6 +28,8 @@ namespace ImportantTopics
         #endregion
         public static void Main(string[] args)
         {
+
+            
             #region MultiThreading
             //Thread t1 = new Thread(MultiThreadingExample.Run1);
             //Thread t2 = new Thread(MultiThreadingExample.Run2);
@@ -66,7 +68,9 @@ namespace ImportantTopics
             //Console.WriteLine(stringBuilder);
             #endregion
 
-
+            #region ExtensionMethods
+            TestExtensionMethod.Test();
+            #endregion
 
             //HelperClass a = new HelperClass();
 
