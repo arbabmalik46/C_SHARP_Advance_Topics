@@ -77,9 +77,66 @@ namespace FileHandling
 
             #endregion
 
+            #region FileStream
+            /* FileStream class is used to read from, write to, open and close files on a file system*/
+            string filePath = @"D:\myFile.txt";
+            //if(!File.Exists(filePath))
+            //{
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Open,FileAccess.ReadWrite))
+            {
+                using (StreamWriter s = new StreamWriter(fileStream))
+                {
 
+                    Console.WriteLine("File Created");
+                    try
+                    {
+                        int a = 1;
+                        int b = 0;
+                        int c = a / b;
+                    }
+                    catch (Exception ex)
+                    {
+                        s.WriteLine(ex.Message);
+                        s.WriteLine(ex.StackTrace);
+                        s.WriteLine(ex.InnerException);
+                        //byte[] bytes = Encoding.UTF8.GetBytes(ex.ToString());
+                        //fileStream.Write(bytes,0,bytes.Length);
+                        //fileStream.WriteByte(Convert.ToByte(ex.ToString()));
+                    }
+                }
+                using (StreamReader sr = new StreamReader(fileStream))
+                {
+                    string lines = "";
+                    while ((lines = sr.ReadLine()) != null)
+                    {
+                        Console.WriteLine(lines);
+                    }
+                    lines = sr.ReadToEnd();
+
+                    var boolp = sr.Peek();
+                    
+                }
+                //fileStream.WriteByte(66);
+                //fileStream.WriteByte(68);
+                //fileStream.WriteByte(69);
+                //fileStream.WriteByte(73);
+                //try
+                //{
+                //    int a = 1;
+                //    int b = 0;
+                //    int c = a/b;
+                //}
+                //catch (Exception ex)
+                //{
+                //    fileStream.WriteByte(Convert.ToByte(ex.ToString()));
+                //}
+            }
+
+            //}
+
+                #endregion
         }
 
-        }
+    }
     }
     
