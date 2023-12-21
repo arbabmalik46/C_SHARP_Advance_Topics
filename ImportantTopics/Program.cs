@@ -123,6 +123,10 @@ namespace ImportantTopics
 
             //HelperClass a = new HelperClass();
 
+            #region Serialization/Deserialization
+
+            SerializationExample serializationExample = new SerializationExample();
+            #endregion
         }
     }
     #region Helper Classes
