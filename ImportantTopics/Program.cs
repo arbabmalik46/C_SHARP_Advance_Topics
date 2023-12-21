@@ -28,8 +28,6 @@ namespace ImportantTopics
         #endregion
         public static void Main(string[] args)
         {
-
-
             #region MultiThreading
             //Thread t1 = new Thread(MultiThreadingExample.Run1);
             //Thread t2 = new Thread(MultiThreadingExample.Run2);
@@ -121,13 +119,19 @@ namespace ImportantTopics
 
             #endregion
 
-            //HelperClass a = new HelperClass();
-
             #region Serialization/Deserialization
             //Serialization
             //SerializationExample serializationExample = new SerializationExample();
             //DeSerializationExample
+            //DeSerializationExample deSerializationExample = new DeSerializationExample();
             #endregion
+
+            #region Concrete Class
+            ///Concrete class is a class that has an implementation of all of its methods. It can also extends an abstract class or implements an interface as long as it implements all theri methids. A class which is not abstract is a concrete class.
+            #endregion
+
+
+            //HelperClass a = new HelperClass();
         }
     }
     #region Helper Classes

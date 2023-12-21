@@ -15,9 +15,9 @@ namespace ImportantTopics
             Employee employee = new Employee(1,"Arbab");
             string path = @"D:\Coding Practice\C#\arbabmalik46\C_SHARP_Advance_Topics\ImportantTopics\SerializationAndDeserialization\FilePath\Sample.txt";
             FileStream fileStream = new FileStream(path, FileMode.OpenOrCreate);
-            BinaryFormatter formatter = new BinaryFormatter();
-            formatter.Serialize(fileStream,employee);
-            fileStream.Close();
+            //BinaryFormatter formatter = new BinaryFormatter();
+            //formatter.Serialize(fileStream,employee);
+            //fileStream.Close();
             Console.WriteLine("File Create at {0}",path);
 
 
@@ -30,8 +30,8 @@ namespace ImportantTopics
         {
             string path = @"D:\Coding Practice\C#\arbabmalik46\C_SHARP_Advance_Topics\ImportantTopics\SerializationAndDeserialization\FilePath\Sample.txt";
             FileStream file = new FileStream(path,FileMode.OpenOrCreate);
-            BinaryFormatter formatter = new BinaryFormatter();
-            Employee employee =(Employee)  formatter.Deserialize(file);
+            //BinaryFormatter formatter = new BinaryFormatter();
+            //Employee employee =(Employee)  formatter.Deserialize(file);
             file.Close();
         }
     }
