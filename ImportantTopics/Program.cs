@@ -12,6 +12,45 @@ namespace ImportantTopics
 {
     class Program
     {
+        #region Async/Awiat
+        public async static void Task1()
+        {
+           await Task.Run(() => {
+                Console.WriteLine("Task 1 started");
+                Thread.Sleep(4000);
+                Console.WriteLine("Task 1 Completed");
+            }
+            );
+            
+        }
+        public async static void Task2()
+        {
+            await Task.Run(() => {
+                Console.WriteLine("Task 2 started");
+                Thread.Sleep(2000);
+                Console.WriteLine("Task 2 Completed");
+            }
+            );
+        }
+        public async static void Task3()
+        {
+            await Task.Run(() => {
+                Console.WriteLine("Task 3 started");
+                Thread.Sleep(5000);
+                Console.WriteLine("Task 3 Completed");
+            }
+            );
+        }
+        public async static void Task4()
+        {
+            await Task.Run(() => {
+                Console.WriteLine("Task 4 started");
+                Thread.Sleep(1000);
+                Console.WriteLine("Task 4 Completed");
+            }
+            );
+        }
+        #endregion
         #region Params Keyword method
 
         /// <summary>
@@ -128,6 +167,14 @@ namespace ImportantTopics
 
             #region Concrete Class
             ///Concrete class is a class that has an implementation of all of its methods. It can also extends an abstract class or implements an interface as long as it implements all theri methids. A class which is not abstract is a concrete class.
+            #endregion
+
+            #region Async/Await
+            Task1();
+            Task2();
+            Task3();
+            Task4();
+
             #endregion
 
 
