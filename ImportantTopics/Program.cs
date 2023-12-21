@@ -124,8 +124,9 @@ namespace ImportantTopics
             //HelperClass a = new HelperClass();
 
             #region Serialization/Deserialization
-
-            SerializationExample serializationExample = new SerializationExample();
+            //Serialization
+            //SerializationExample serializationExample = new SerializationExample();
+            //DeSerializationExample
             #endregion
         }
     }

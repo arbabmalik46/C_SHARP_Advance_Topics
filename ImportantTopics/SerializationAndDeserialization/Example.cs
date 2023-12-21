@@ -24,4 +24,16 @@ namespace ImportantTopics
         }
 
     }
+    public class DeSerializationExample
+    {
+        public DeSerializationExample()
+        {
+            string path = @"D:\Coding Practice\C#\arbabmalik46\C_SHARP_Advance_Topics\ImportantTopics\SerializationAndDeserialization\FilePath\Sample.txt";
+            FileStream file = new FileStream(path,FileMode.OpenOrCreate);
+            BinaryFormatter formatter = new BinaryFormatter();
+            Employee employee =(Employee)  formatter.Deserialize(file);
+            file.Close();
+        }
+    }
+
 }
