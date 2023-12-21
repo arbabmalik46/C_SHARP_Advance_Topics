@@ -91,6 +91,19 @@ namespace ImportantTopics
             #region IS/AS Keyword
             //summary of IS Keyword
             // IS keyword is used to check the data type of an object
+            //object obj = "Arbab";
+            //if(obj is int)
+            //{
+            //    Console.WriteLine("It is String");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("It is false");
+            //}
+            //AS Keyword
+            object aas = 456;
+            string name = aas as string;
+            Console.WriteLine(name);
 
             #endregion
 
