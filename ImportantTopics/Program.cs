@@ -101,9 +101,23 @@ namespace ImportantTopics
             //    Console.WriteLine("It is false");
             //}
             //AS Keyword
-            object aas = 456;
-            string name = aas as string;
-            Console.WriteLine(name);
+            //object aas = 456;
+            //string name = aas as string;
+            //Console.WriteLine(name);
+
+            #endregion
+
+            #region Null Collesce Operator
+            //object name = 123;
+            //string result = name as string;
+            //result = result ?? "Arbab";
+            //Console.WriteLine(result);
+
+            //string apple = null;
+            //string banana = "Banana";
+            //string cherry = "Cherry";
+            //string result = apple ?? banana ?? cherry;
+            //Console.WriteLine(result);
 
             #endregion
 
