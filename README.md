@@ -1,3 +1,3 @@
 # C_SHARP_Advance_Topics
-C# Advance Topics Are Uploaded Here
- C# Attribute is remaining
+This repository covers most of the advance topics that a .Net developer should know. Code was done by following playlist: https://www.youtube.com/playlist?list=PLX07l0qxoHFLZftsVKyj3k9kfMca2uaPR <br>
+If there is any missing topic. Kindly log a new issue with title: Remaining C# Topics and description: Remaining Topics are: <Topic 1> <Topic 2> etc...
