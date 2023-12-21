@@ -29,7 +29,7 @@ namespace ImportantTopics
         public static void Main(string[] args)
         {
 
-            
+
             #region MultiThreading
             //Thread t1 = new Thread(MultiThreadingExample.Run1);
             //Thread t2 = new Thread(MultiThreadingExample.Run2);
@@ -69,7 +69,29 @@ namespace ImportantTopics
             #endregion
 
             #region ExtensionMethods
-            TestExtensionMethod.Test();
+            //TestExtensionMethod.Test();
+            #endregion
+
+            #region Boxing/Unboxing
+            //Boxing -> stored in heap
+            //int num = 4; //value type 
+            //object boj = num; //implicitly converting to reference type
+            //Unboxing -> stored in stack
+            //int numb = 4; //value type 
+            //object obj = numb; //implicitly converting to reference type 
+            //int numb2 = (int)obj; //explicitly converting to value type
+
+            #endregion
+
+            #region GUID
+            //Guid g = Guid.NewGuid();
+            //Console.WriteLine(g.ToString().Replace("-",string.Empty).Substring(0,5));
+            #endregion
+
+            #region IS/AS Keyword
+            //summary of IS Keyword
+            // IS keyword is used to check the data type of an object
+
             #endregion
 
             //HelperClass a = new HelperClass();
